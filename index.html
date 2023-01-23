@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<script src="script.js"></script>
+	<title>To Do List</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+          <h1 class="heading" >Task List</h1>
+        
+  <div class="container">
+    <div class="row">
+
+      <div class="col-lg-6">
+        <form id="addForm">
+          <h2 class="sub-heading">Add Items</h2>
+          <label id="lblsuccess" class="text-success" style="display: none;"></label>
+          <input type="text" onkeyup="toggleButton(this, 'submit')"	class="form" id="item">
+          <input type="submit" class="btn btn-dark"	id="submit" value="Submit" disabled >
+        </form>
+      </div>
+      
+		  <div class="col-lg-6">
+  		  <h3 class="sub-heading">Your Tasks are here</h3>
+  		  <form id="addForm" style="margin-top:50px">
+	  		  <ul class="list-group" id="items"></ul>
+		    </form>
+      </div>
+
+    </div>
+	</div>
+
+</body>
+</html>
